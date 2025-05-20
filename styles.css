@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: rgb(51, 0, 0);
+}
+
+header{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px #b90404;
+    position: sticky;
+    top: 0;
+    background: #51010182;
+    border-radius: 15px;
+}
+
+header a {
+
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1{
+    margin: 1rem;
+ }
+
+ #grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+ }
+ .foto img {
+    max-width: 100%;
+    max-height: 100%;
+ }
+ .foto {
+    text-align: center;
+ }
+ 
+ .style-icon {
+    display: none;
+ }
+
+
+ #add_new_photo {
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(29, 29, 29, .5);
+    display: none;
+ }
+
+ #add_new_photo.open {
+    display: flex;
+ }
+ #add_new_photo div {
+    width: 80%;
+    border: 2px solid black;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+ }
+ #add_new_photo input {
+    padding: .5rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+ }
+ #add_new_photo input.error {
+   border-color: blueviolet;
+ }
+
+ #add_new_photo button {
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: .5rem;
+ }
+
+ #heroin_photo {
+   position: fixed;
+   z-index: 2;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background: rgba(29, 29, 29, .5);
+   display: none;
+ }
+ #heroin_photo.open {
+   display: flex;
+ }
+ #heroin_photo img {
+   max-width: 90%;
+   max-height: 90%;
+ }
